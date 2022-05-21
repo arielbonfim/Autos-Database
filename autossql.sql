@@ -1,0 +1,14 @@
+CREATE TABLE autos (
+  idauto INT UNSIGNED NOT NULL AUTO_INCREMENT KEY,
+  make VARCHAR (30),
+  year INT,
+  mileage INT
+) ENGINE=InnoDB CHARSET=utf8;
+
+CREATE TABLE users (
+    userid INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY_KEY,
+    name VARCHAR (30),
+    email VARCHAR (30),
+    password VARCHAR (30),
+    INDEX (email)
+) ENGINE=InnoDB CHARSET=utf8;
